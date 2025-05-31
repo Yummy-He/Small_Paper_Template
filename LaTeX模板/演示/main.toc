@@ -1,0 +1,36 @@
+\contentsline {section}{\numberline {1}文献管理软件}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}介绍}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}下载安装}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}文献导入方法}{1}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}在Word中插入}{3}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}参考文献样式}{5}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}选定及更改参考文献样式}{5}{subsubsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.2}国标样式}{5}{subsubsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.6}插件}{6}{subsection.1.6}%
+\contentsline {section}{\numberline {2}Word相关操作}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}公式排版相关知识}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}WPS}{7}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}WPS优缺点}{7}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}使用MS Office}{7}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Word模板使用}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Word标题格式}{8}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}目录}{9}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}在WPS中使用}{9}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}WPS专业版下载}{9}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}在WPS使用模板}{10}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}导出为PDF}{11}{subsubsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.7}碎碎念}{11}{subsection.2.7}%
+\contentsline {section}{\numberline {3}\LaTeX {} 入门}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}\LaTeX {} 简介及与Word对比}{12}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}\LaTeX {} 简介}{12}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}与Word对比}{12}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}下载安装及使用}{13}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}基础命令}{14}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}章节与段落}{14}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}数学环境}{15}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}稍稍进阶命令}{16}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}高阶命令}{18}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}导入参考文献}{19}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}编译}{20}{subsection.3.7}%
+\contentsline {section}{\numberline {4}其他高级排版软件}{20}{section.4}%
+\contentsline {section}{参考文献}{21}{section.4}%
