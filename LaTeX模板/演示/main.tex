@@ -1,0 +1,139 @@
+\documentclass[
+%draft, 
+12pt, a4paper, oneside]{ctexart}
+\tolerance=20000
+\usepackage{metalogo}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{forest}
+\usepackage{dirtree}
+\usepackage{listings}
+\usepackage{amsmath, amsthm, amssymb, appendix, bm, mathrsfs, graphicx, upgreek, parskip}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{unicode-math}
+\usepackage{subcaption}
+\graphicspath{{image/}}
+\usepackage[square, super,sort&compress]{natbib} % 引用宏包
+%\setmathfont{TeX Gyre Termes Math}
+%\usepackage{isomath} % 导入isomath包
+%\usepackage{newtx} % 提供\uppartial
+\usepackage{etoolbox}
+
+% 带圈数字
+\usepackage{fontspec}
+% \setmathfont{XITS Math}
+% 定义带圈数字字体（不更改全局字体）
+\newfontfamily{\circlefont}{Segoe UI Symbol}
+\setmonofont{Consolas}[Scale = 0.9]
+
+% listings设置
+\definecolor{lightgray}{rgb}{0.95,0.95,0.95}
+\lstset{
+  backgroundcolor = \color{lightgray},      % 浅灰色背景
+  basicstyle = \fontsize{10}{11}\ttfamily\color{black}, % 基础样式
+  keywordstyle = \color{blue},               % 关键字颜色
+  commentstyle = \color{green!50!black},      % 注释颜色
+  stringstyle = \color{red},                  % 字符串颜色
+  showstringspaces = false,                   % 不显示字符串中的空格
+  breaklines = true,                          % 自动换行
+  frame = single,                             % 边框样式
+  rulecolor = \color{gray},                   % 边框颜色
+  numbers = left,                             % 行号在左侧
+  numberstyle = \tiny\color{gray},            % 行号样式
+  escapeinside = {(*}{*)},                    % 转义字符设置（用于嵌入 LaTeX）
+  literate =                                  % 特殊字符处理
+      {\\}{{\textbackslash}}1
+      {~}{{\raisebox{0.5ex}{\texttildelow}}}1
+}
+
+% 定义带圈数字命令：\circled{1} 至 \circled{20}
+\newcommand{\circled}[1]{%
+  {\circlefont\char\numexpr"2460 + #1 - 1\relax}%
+}
+% 首段缩进
+\usepackage{indentfirst} % 首段缩进宏包
+\setlength{\parindent}{2em} % 设置缩进量为2个汉字宽度
+% 首段缩进
+
+% 页边距
+\usepackage{geometry}
+\geometry{a4paper,left=2cm,right=2cm,top=2.5cm,bottom=2.5cm}
+% 页边距
+\usepackage{titlesec} % 加载 titlesec 宏包
+
+\usepackage[hidelinks]{hyperref} % 添加 hidelinks 选项去除红框
+
+\input{information.tex}
+\linespread{1.5}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{definition}[theorem]{定义}
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{corollary}[theorem]{推论}
+\newtheorem{example}[theorem]{例}
+\newtheorem{proposition}[theorem]{命题}
+\renewcommand{\abstractname}{\Large\textbf{摘要}}
+
+% ----------------------------------------------
+% 标题格式
+
+% 设置节标题格式
+\titleformat{\section}
+  {\normalfont\LARGE\bfseries} % 标题字体
+  {\thesection} % 编号格式
+  {0.5em} % 标题和编号之间的间距
+  {}
+
+\titlespacing*{\section}{-2em}{2ex plus 1ex minus .1ex}{1ex plus .2ex}
+
+% 设置子节标题格式
+\titleformat{\subsection}
+  {\normalfont\Large\bfseries} % 标题字体
+  {\thesubsection} % 编号格式
+  {0.25em} % 标题和编号之间的间距
+  {}
+
+\titlespacing*{\subsection}{0pt}{2ex plus 1ex minus .1ex}{1ex plus .1ex}
+
+% 设置小节标题格式
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries} % 标题字体
+  {\thesubsubsection} % 编号格式
+  {0.25em} % 标题和编号之间的间距
+  {}
+
+\titlespacing*{\subsubsection}{2em}{2ex plus 1ex minus .1ex}{1ex plus .1ex}
+
+
+\begin{document}
+
+\input{titlepage.tex} % 引入封面页
+
+\newpage
+\pagenumbering{Roman}
+\setcounter{page}{1}
+
+\tableofcontents %引入目录
+
+\newpage
+\setcounter{page}{1} %重设页数为1
+\pagenumbering{arabic}
+
+\setlength{\parskip}{0.3\baselineskip plus 0.1\baselineskip minus 0.1\baselineskip}
+
+% 调整数学环境前后的间距（带弹性伸缩）
+\setlength{\abovedisplayskip}{0.3\baselineskip plus 0.1\baselineskip minus 0.1\baselineskip}
+\setlength{\belowdisplayskip}{0.1\baselineskip plus 0.1\baselineskip minus 0.1\baselineskip}
+
+\include{content.tex} 
+
+
+\newpage
+
+% 参考文献
+\nocite{*}
+\bibliographystyle{unsrt}
+\addcontentsline{toc}{section}{\refname}
+\bibliography{references.bib}
+
+
+\end{document}
